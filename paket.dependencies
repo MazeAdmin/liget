@@ -1,4 +1,5 @@
 source https://api.nuget.org/v3/index.json
+source https://www.myget.org/F/maze/api/v3/index.json
 framework netcoreapp2.1, netstandard2.0
 storage: none
 
@@ -22,11 +23,10 @@ nuget Microsoft.Extensions.Options.ConfigurationExtensions
 nuget Microsoft.AspNetCore.Cors
 nuget Gelf.Extensions.Logging
 nuget morelinq
-nuget NuGet.Client
-nuget NuGet.Packaging
-nuget NuGet.Packaging.Core
-nuget NuGet.Protocol
-nuget NuGet.CatalogReader
+nuget Maze.NuGet.Packaging
+nuget Maze.NuGet.Packaging.Core
+nuget Maze.NuGet.Protocol
+nuget Maze.NuGet.CatalogReader
 nuget WindowsAzure.Storage
 nuget carter
 nuget Microsoft.AspNetCore.OData.vNext 6.0.2-alpha-rtm
@@ -50,6 +50,7 @@ group Tools
 
 group Test
   source https://api.nuget.org/v3/index.json
+  source https://www.myget.org/F/maze/api/v3/index.json
   framework netcoreapp2.1, netstandard2.0
   storage: none
 
@@ -65,6 +66,6 @@ group Test
   nuget Microsoft.Extensions.Logging
   nuget Microsoft.Extensions.Logging.Abstractions
   nuget Microsoft.Extensions.Logging.Configuration
-  nuget NuGet.Protocol
-  nuget NuGet.CatalogReader
+  nuget Maze.NuGet.Protocol
+  nuget Maze.NuGet.CatalogReader
   nuget carter

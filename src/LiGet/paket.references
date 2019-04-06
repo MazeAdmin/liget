@@ -9,12 +9,11 @@ Microsoft.EntityFrameworkCore.Sqlite
 Microsoft.Extensions.Logging.Configuration
 Microsoft.Extensions.Logging.Console
 Gelf.Extensions.Logging
-NuGet.Client
 carter
-NuGet.CatalogReader
-NuGet.Packaging
-NuGet.Protocol
-NuGet.Packaging.Core
+Maze.NuGet.CatalogReader
+Maze.NuGet.Packaging
+Maze.NuGet.Protocol
+Maze.NuGet.Frameworks
 Microsoft.AspNetCore.OData.vNext
 Microsoft.OData.Core
 Microsoft.OData.Edm
