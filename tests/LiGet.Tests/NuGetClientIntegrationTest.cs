@@ -337,10 +337,9 @@ namespace LiGet.Tests
 
         private PackageSearchResourceV3 GetSearch()
         {
-            PackageMetadataResourceV3 packageMetadataRes = GetPackageMetadataResource();
             RawSearchResourceV3 rawSearchResource = _sourceRepository.GetResource<RawSearchResourceV3>();
             Assert.NotNull(rawSearchResource);
-            var search = new PackageSearchResourceV3(rawSearchResource, packageMetadataRes);
+            var search = new PackageSearchResourceV3(rawSearchResource);
             return search;
         }
 
